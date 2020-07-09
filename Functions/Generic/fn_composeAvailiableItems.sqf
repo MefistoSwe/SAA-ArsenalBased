@@ -1,3 +1,4 @@
+// Function composes array of items which availiable to certain combination of classes within lists of items in Items folder
 params ["_uid"];
 
 (missionNamespace getVariable [format["%1_DATA", _this # 0], ["PVT", "Rifleman", "None"]]) params ["_rank", "_firstClass", "_secondClass"];

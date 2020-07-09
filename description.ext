@@ -19,7 +19,6 @@ class CfgFunctions
 			class getInventory {};
 			class saveInventory {};
             class loadPlayer {};
-            class savePlayer {};
 			class changeClasses {};
         };
 		class Respawn {
@@ -36,7 +35,6 @@ class CfgFunctions
 			class endMission {};
 			class rolesAssign {};
 			class addShadecArsenal {};
-			class respawnTeleport {};
 			class assignFob {};
 			class assignJammer {};
 			class objectJamming {};
@@ -45,20 +43,14 @@ class CfgFunctions
 			class playersList {};
 		};
 		class Generic {
-			class gearList {};
-			class getCargoCompat {};
-			class itemsListShortener {};
-			class listCreate {};
-			class loadoutListCreate {};
 			class reLoadoutUnit {};
 			class addZeusModules {};
-			class usersIDs {};
 			class removeFob {};
 			class clearVehicleInventory {};
 			class composeAvailiableItems {};
 			class classSwitcher {};
 		};
-		class Classes {
+		class Items {
 			class Rifleman {};
 			class Nurse {};
 			class Machinegunner {};
@@ -91,8 +83,6 @@ class CfgRemoteExec
 		class rolesAssign {allowedTargets = 2;};
 		class addShadecArsenal {allowedTargets = 2;};
 		class changeRespawnTime {allowedTargets = 2;};
-		class respawnTeleport {allowedTargets = 2;};
-		class usersIDs {allowedTargets = 2;};
 		class assignFob {allowedTargets = 2;};
 		class removeFob {allowedTargets = 2;};
 		class assignJammer {allowedTargets = 2;};
