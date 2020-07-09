@@ -10,16 +10,16 @@ _EH_PlayerDisconnected = addMissionEventHandler ["HandleDisconnect", {
 	_pname = _this select 3;
 
 	// If player equipment didn't load for some reason - don't save
-	_loadoutLoaded = missionNamespace getVariable [format["loadoutLoaded_%1", _uid], false];
-	if (_loadoutLoaded) then {
-		[_unit, _uid, _pname] spawn Shadec_fnc_savePlayer;
-		[_uid] spawn Shadec_fnc_deleteStorage;	
-	} else {
-		diag_log format ["Loadout not loaded, abort player saving: %1", _name];
-	};
+	// _loadoutLoaded = missionNamespace getVariable [format["loadoutLoaded_%1", _uid], false];
+	// if (_loadoutLoaded) then {
+	// 	[_unit, _uid, _pname] spawn Shadec_fnc_savePlayer;
+	// 	[_uid] spawn Shadec_fnc_deleteStorage;	
+	// } else {
+	// 	diag_log format ["Loadout not loaded, abort player saving: %1", _name];
+	// };
 
-	missionNamespace setVariable [format["loadoutLoaded_%1", _uid], nil, true];
-	false;
+	// missionNamespace setVariable [format["loadoutLoaded_%1", _uid], nil, true];
+	// false;
 }];
 
 //Player disconnected handler with _owner passed

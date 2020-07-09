@@ -10,7 +10,6 @@ switch (_endType) do {
 
 {
 	[_x, getPlayerUID _x, name _x] spawn Shadec_fnc_savePlayer;
-	[getPlayerUID _x] spawn Shadec_fnc_saveStorage;
 	diag_log format["PLAYER FINISHED:%1", _x];
 } forEach allPlayers;
 

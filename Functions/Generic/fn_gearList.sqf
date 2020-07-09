@@ -1,5 +1,5 @@
 // Function to Ace Arsenal Handler
-//  
+// Compare unit loadout on open (save) and on exit (load) ACE Arsenal
 
 fnc_FormatCargo = {
 	params ["_containerType"];

@@ -11,4 +11,4 @@ _inventory = getUnitLoadout _unit;
 _data = [_inventory,_uid];
 diag_log format["SAVE PLAYER INVENTORY:%1", _data];
 
-[["saveInventory",_data], Shadec_fnc_call_db] remoteExec ["spawn", 2];
+// Save action

@@ -26,7 +26,7 @@ _EH_PlayerRespawn = player addEventHandler ["Respawn", {
         [[player, getPlayerUID player], Shadec_fnc_reLoadoutUnit] remoteExec ["call", 2];
         titleFadeOut 1;
 
-        // Reassign medic/engineer roles
+        // Reassign roles
         [[player, getPlayerUID player, "Assign"], Shadec_fnc_rolesAssign] remoteExec ["spawn", 2];
 
         // Reenable fatigue (ace bug)
@@ -34,7 +34,7 @@ _EH_PlayerRespawn = player addEventHandler ["Respawn", {
         
         sleep 5;
 
-        // If unit has Long Range Radio - Load Freqs before Respawn
+        // If unit has Long Range Radio - Load saved Freqs
         if (call TFAR_fnc_haveLRRadio) then {
             [(call TFAR_fnc_activeLrRadio) select 0, (call TFAR_fnc_activeLrRadio) select 1, player getVariable "radioLrSettings"] call TFAR_fnc_setLrSettings;
         };
